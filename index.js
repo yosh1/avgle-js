@@ -15,5 +15,4 @@ request(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page + l
                 console.log(i + 1 + ". " + videos[i].title);
             }
         }
-
     });
