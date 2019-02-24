@@ -6,7 +6,7 @@ let query = 'AV',
 request(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page + limit,
     (error, response, body) => {
         var response = JSON.parse(body);
-        // console.log(response);
+        console.log(response);
 
         if (response.success) {
             var videos = response.response.videos;
