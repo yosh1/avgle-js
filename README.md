@@ -8,6 +8,7 @@ This is a sample application that uses node.js and avgle API .
 ### Local
 
 ```:bash
+$ npm install
 $ npm run start
 ```
 
