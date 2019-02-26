@@ -2,8 +2,6 @@ FROM node:10.11.0-alpine
 
 ENV NODE_ENV=development
 
-RUN apk add --update nodejs nodejs-npm
-
 ARG project_dir=/app/
 COPY . ${project_dir}
 WORKDIR ${project_dir}
@@ -13,9 +11,7 @@ RUN set -x && \
     apk add vim  \
             git && \
     apk add --update nodejs nodejs-npm && \
-    npm install && \
-    rm -rf /var/cache/apk && \
-    apk del build-dependencies
+    npm install
 
 EXPOSE 3000
 
