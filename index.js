@@ -9,7 +9,7 @@ request(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page + l
         var response = JSON.parse(body);
         // console.log(response);
         if (response.success) {
-            var videos = response.response.videos;
+            let videos = response.response.videos;
 
             for (let i = 0; i < videos.length; i++) {
                 console.log(i + 1 + ". " + videos[i].title);
