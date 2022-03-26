@@ -1,4 +1,4 @@
-FROM node:10.16.0-alpine
+FROM node:17.8.0-alpine
 
 ENV NODE_ENV=development
 
